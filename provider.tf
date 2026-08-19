@@ -5,6 +5,12 @@ terraform {
       version = "=5.0.0"
     }
   }
+backend "azurerm" {
+  resource_group_name = "Pagla.com"
+  storage_account_name = "storageaccount125768344"
+  container_name = "paglacontainer"
+  key = "prod.terraform.tfstate"
+}
 }
 
 # Configure the Microsoft Azure Provider
