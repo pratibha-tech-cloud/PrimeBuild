@@ -90,3 +90,10 @@ resource "azurerm_resource_group" "rgblock10" {
   name     = "rg-terraform-prod"
   location = "East US"
 }
+
+
+
+resource "azurerm_resource_group" "rgblock11" {
+  name     = "rg-terraform-uat"
+  location = "Central India"
+}
