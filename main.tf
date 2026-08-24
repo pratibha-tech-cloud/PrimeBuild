@@ -3,6 +3,8 @@ resource "azurerm_resource_group" "rsgblock" {
   location = "Central india"
 }
 
+# new line added
+
 
 # resource "azurerm_virtual_network" "vnetblock" {
 #   name                = "vnet-primebuild-prod"
