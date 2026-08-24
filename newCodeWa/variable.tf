@@ -8,8 +8,17 @@
 # }
 variable "resource_groups" {
   type = map(object({
-    name = string
+    rgkanam  = string
     location = string
-    
+  }))
+}
+
+
+variable "vnets" {
+  type = map(object({
+    name     = string
+    rgname   = string
+    location = string
+    addspc   = list(string)
   }))
 }
