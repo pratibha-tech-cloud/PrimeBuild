@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rsgblock" {
 }
 
 # new line added
-
+#2nd line aded
 
 # resource "azurerm_virtual_network" "vnetblock" {
 #   name                = "vnet-primebuild-prod"
