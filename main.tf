@@ -1,13 +1,17 @@
-# resource "azurerm_resource_group" "rsgblock" {
-#   name     = "rg-primebuild-prod"
-#   location = "Central india"
-# }
+resource "azurerm_resource_group" "rsgblock" {
+  name     = "rg-primebuild-prod"
+  location = "Central india"
+}
+
+
 # resource "azurerm_virtual_network" "vnetblock" {
 #   name                = "vnet-primebuild-prod"
 #   location            = azurerm_resource_group.rsgblock.location
-#   resource_group_name = azurerm_resource_group.rsgblock.name
+#   resource_group_name = azurerm_resource_group.rsgblock.name  
 #   address_space       = ["10.0.0.0/16"]
 # }
+
+
 # resource "azurerm_subnet" "subnetblock" {
 #   name                 = "subnet-primebuild-prod"
 #   resource_group_name  = azurerm_resource_group.rsgblock.name
@@ -86,14 +90,18 @@
 # }
 
 
-resource "azurerm_resource_group" "rgblock10" {
-  name     = "rg-terraform-prod"
-  location = "East US"
-}
+# resource "azurerm_resource_group" "rgblock10" {
+#   name     = "rg-terraform-prod"
+#   location = "East US"
+# }
 
 
 
-resource "azurerm_resource_group" "rgblock11" {
-  name     = "rg-terraform-uat"
-  location = "Central India"
-}
+
+
+
+
+# resource "azurerm_resource_group" "rgblock11" {
+#   name     = "rg-terraform-uat"
+#   location = "Central India"
+# }
